@@ -1,0 +1,164 @@
+
+.contact {
+    background-color: var(--color-dark);
+}
+
+.container__contact {
+    background-color: var(--color-light);
+    padding: 6.4rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 6.4rem;
+    height: 50rem;
+    margin: 11.2rem auto;
+    border-radius: 1.6rem;
+}
+
+/* ============== ASIDE =================== */
+.contact__aside {
+    background-color: var(--color-lighter);
+    color: var(--color-darker);
+    padding: 0 4rem 3rem;
+    border-radius: 1.6rem;
+    position: relative;
+    bottom: 16rem;
+}
+
+.contact__aside h2 {
+    margin-top: 2rem;
+}
+
+.aside__image {
+    width: 19.2rem;
+    margin-bottom: 3.2rem;
+}
+
+.contact__aside h2 {
+    text-align: left;
+    margin-bottom: 3rem;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.contact__aside p {
+    font-size: 1.44rem;
+    margin-bottom: 3.2rem;
+    color: var(--color-darker);
+}
+
+.contact__details li {
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+    margin-bottom: 1.6rem;
+}
+
+.contact__socials {
+    display: flex;
+    gap: 1rem;
+    margin-top: 4.8rem;
+}
+
+.contact__socials img {
+    width: 2.5rem;
+    filter: invert();
+}
+
+.contact__socials a {
+    display: inline-block;
+    background-color: transparent;
+    padding: .7rem;
+    border-radius: 50%;
+    font-size: 1.44rem;
+    transition: var(--transition);
+}
+
+.contact__socials a:hover {
+    background-color: var(--color-dark);
+}
+
+
+/* ============== FORM =================== */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-right: 6.4rem;
+}
+
+.form__name {
+    display: flex;
+    gap: 1.9rem;
+}
+
+form input[type="text"] {
+    width: 50%;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 1.4rem;
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    font-size: 1.6rem;
+    font-family: inherit;
+}
+
+input::placeholder, textarea::placeholder {
+    color: var(--color-lighter);
+}
+
+form .btn {
+    width: max-content;
+    cursor: pointer;
+    margin-top: 1.6rem;
+}
+
+
+/* ============== MEDIA QUERIES =================== */
+@media screen and (max-width: 1024px) {
+    .contact {
+        padding-bottom: 0;
+    }
+
+    .container__contact {
+        gap: 2.4rem;
+        margin-top: 4.2rem;
+        height: auto;
+        padding: 2.4rem;
+    }
+
+    .contact__aside {
+        width: auto;
+        padding: 2.4rem;
+        bottom: 0;
+    }
+
+    form {
+        align-self: center;
+        margin-right: 2.4rem;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .container__contact {
+        grid-template-columns: 1fr;
+        gap: 4.2rem;
+        margin-top: 0;
+    }
+
+    form {
+        margin: 0 2.4rem 4.8rem;
+    }
+
+    .form__name {
+        flex-direction: column;
+    }
+
+    .form__name input[type="text"] {
+        width: 100%;
+    }
+
+    
+}
